@@ -1,0 +1,57 @@
+{
+	"inputdir": "/home/mohammad/Desktop/Mohammad/Pro/PostPhD/UM6P/Y_2023/others/for_Mme_Ouaraini/08-07-2023",
+	"starttime": "2010030100",
+	"endtime": "2010033000",
+	"plotWhenItRains": {
+		"file_dates_precip": "aver_RR_6stat_NAO-_Classic",
+		"file_name_of_extreme_days": "extreme_RR_6stat_NAO-_Classic",
+		"HorizMeans": {
+			"varibales": ["MSLP", "T500", "RH500", "T850", "RH850"],
+			"vars_names_in_netcdf": {
+				"MSLP": "msl",
+				"T500": "t",
+				"RH500": "r",
+				"T850": "t",
+				"RH850": "r"
+			},
+			"cmaps": [
+				["jet"],
+				["jet"],
+				["YlOrBr"],
+				["jet"],
+				["YlOrBr"]
+			],
+			"cmap_bounds": [
+				[960, 1044, 4],
+				[-50, 5, 5],
+				[0, 130, 10],
+				[-24, 28, 4],
+				[20, 120, 10]
+			],
+			"cmaps_diff": [
+				["cmapMed_centred_on_white_for_diff"],
+				["cmapMed_centred_on_white_for_diff"],
+				["cmapMed_centred_on_white_for_diff"],
+				["cmapMed_centred_on_white_for_diff"],
+				["cmapMed_centred_on_white_for_diff"]
+			],
+			"cmap_bounds_diff": [
+				[-40, 44, 2],
+				[-22, 24, 2],
+				[-90, 90, 10],
+				[-18, 20, 2],
+				[-80, 90, 10]
+			],
+			"plot_extreme": false,
+			"plotWindonVars": true,
+			"plotWindWithvars": ["MSLP", "Z500"],
+			"levWind": {"MSLP": "850", "Z500": "500"},
+			"plottwovaronsameplot":false,
+			"two_vars_on_same_plot": [
+				["Z500", "T500"],
+				["Z850", "T850"]
+			]
+		}
+
+	}
+}
